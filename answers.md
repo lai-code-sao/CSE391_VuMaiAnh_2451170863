@@ -35,7 +35,7 @@ Câu A2 - Semantic HTML (tuan_1_html5/00_design_thinking_layout.md + phần 5)
 - Lỗi 1: Dùng thẻ `<div>` cho phần header
 - Lỗi 2: Dùng thẻ `<div>` cho phần main
 - Lỗi 3: Dùng thẻ `<div>` cho phần footer
-- Lỗi 4: Thẻ `<img>` chưa có thuộc tính alt
+- Lỗi 4: Thẻ `<img>` chưa có thuộc tính alt  
 Sửa lại:
 <pre>
 &amp;lt;header class=&quot;header&quot;&amp;gt;
@@ -57,12 +57,13 @@ Sửa lại:
 &amp;lt;footer class=&quot;footer&quot;&amp;gt;© 2026 ShopTLU&amp;lt;/footer&amp;gt;
 </pre>
 
-Câu A3 - Block vs Inline (tuan_1_html5/00_design_thinking_layout.md + phần 6 mục 6.1)
+Câu A3 - Block vs Inline (tuan_1_html5/00_design_thinking_layout.md + phần 6 mục 6.1)  
 Kết quả:
 <img src="images/PBT_01_A3.png" style="width: 1000px; height: 600px; ">
+
 Giải thích:
-Thẻ `<div>` là thẻ Block -> mỗi thẻ TỰ XUỐNG DÒNG
-Thẻ `<span>` và `<strong>` là thẻ Inline -> các thẻ NẰM CÙNG DÒNG
+- Thẻ `<div>` là thẻ Block -> mỗi thẻ TỰ XUỐNG DÒNG
+- Thẻ `<span>` và `<strong>` là thẻ Inline -> các thẻ NẰM CÙNG DÒNG
 
 Câu A4 - Table (tuan_1_html5/05_tables_hyperlinks.md + phần table)
 
