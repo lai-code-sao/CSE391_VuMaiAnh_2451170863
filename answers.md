@@ -30,30 +30,32 @@ B6: → Chrome nhận file HTML, CSS, JS → render ra giao diện → bạn th�
     <div>
     <img src="images/Screenshot 2026-04-19 013700.png" style="width: 1000px; height: 600px; ">
     </div>
-    
+
 Câu A2 - Semantic HTML (tuan_1_html5/00_design_thinking_layout.md + phần 5)
 -Lỗi 1: Dùng thẻ <div> cho phần header
 -Lỗi 2: Dùng thẻ <div> cho phần main
 -Lỗi 3: Dùng thẻ <div> cho phần footer
 -Lỗi 4: Thẻ <img> chưa có thuộc tính alt
 Sửa lại:
-```html
-<header class="header">
-    <div class="logo">ShopTLU</div>
-    <div class="menu">
-        <div><a href="/">Trang chủ</a></div>
-        <div><a href="/products">Sản phẩm</a></div>
-    </div>
-</header>
-<main class="main">
-    <div class="product">
-        <div class="title">iPhone 16 Pro</div>
-        <div class="price">25.990.000đ</div>
-        <div class="image"><img src="iphone.jpg" alt="ảnh điện thoại"></div>
-    </div>
-</main>
-<footer class="footer">© 2026 ShopTLU</footer>
-```html
+<pre>
+&amp;lt;header class=&quot;header&quot;&amp;gt;
+    &amp;lt;div class=&quot;logo&quot;&amp;gt;ShopTLU&amp;lt;/div&amp;gt;
+    &amp;lt;div class=&quot;menu&quot;&amp;gt;
+        &amp;lt;div&amp;gt;&amp;lt;a href=&quot;/&quot;&amp;gt;Trang chủ&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;
+        &amp;lt;div&amp;gt;&amp;lt;a href=&quot;/products&quot;&amp;gt;Sản phẩm&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/header&amp;gt;
+
+&amp;lt;main class=&quot;main&quot;&amp;gt;
+    &amp;lt;div class=&quot;product&quot;&amp;gt;
+        &amp;lt;div class=&quot;title&quot;&amp;gt;iPhone 16 Pro&amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;price&quot;&amp;gt;25.990.000đ&amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;image&quot;&amp;gt;&amp;lt;img src=&quot;iphone.jpg&quot; alt=&quot;ảnh điện thoại&quot;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/main&amp;gt;
+
+&amp;lt;footer class=&quot;footer&quot;&amp;gt;© 2026 ShopTLU&amp;lt;/footer&amp;gt;
+</pre>
 
 Câu A3 - Block vs Inline (tuan_1_html5/00_design_thinking_layout.md + phần 6 mục 6.1)
 Kết quả:
