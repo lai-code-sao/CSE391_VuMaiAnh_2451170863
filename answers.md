@@ -33,10 +33,10 @@ B6: → Chrome nhận file HTML, CSS, JS → render ra giao diện → bạn th�
 
 Câu A2 - Semantic HTML (tuan_1_html5/00_design_thinking_layout.md + phần 5)
 Lỗi semantic:
--Lỗi 1: Dùng thẻ <div> cho phần header
--Lỗi 2: Dùng thẻ <div> cho phần main
--Lỗi 3: Dùng thẻ <div> cho phần footer
--Lỗi 4: Thẻ <img> chưa có thuộc tính alt
+-Lỗi 1: Dùng thẻ `<div>` cho phần header
+-Lỗi 2: Dùng thẻ `<div>` cho phần main
+-Lỗi 3: Dùng thẻ `<div>` cho phần footer
+-Lỗi 4: Thẻ `<img>` chưa có thuộc tính alt
 Sửa lại:
 <pre>
 &amp;lt;header class=&quot;header&quot;&amp;gt;
