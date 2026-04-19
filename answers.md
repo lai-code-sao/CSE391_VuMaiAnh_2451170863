@@ -61,8 +61,9 @@ Câu A3 - Block vs Inline (tuan_1_html5/00_design_thinking_layout.md + phần 6 
 Kết quả:
 <img src="images/PBT_01_A3.png" style="width: 1000px; height: 600px; ">
 Giải thích:
-Thẻ <div> là thẻ Block -> mỗi thẻ TỰ XUỐNG DÒNG
-Thẻ <span> và <strong> là thẻ Inline -> các thẻ NẰM CÙNG DÒNG
+Thẻ `<div>` là thẻ Block -> mỗi thẻ TỰ XUỐNG DÒNG
+Thẻ `<span>` và `<strong>` là thẻ Inline -> các thẻ NẰM CÙNG DÒNG
+
 Câu A4 - Table (tuan_1_html5/05_tables_hyperlinks.md + phần table)
 
 Thẻ	        | Vai trò	    | Ghi nhớ
