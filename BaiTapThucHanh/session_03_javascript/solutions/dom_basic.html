@@ -80,7 +80,16 @@
             element.style.fontSize = `${fontSize}px`
         });
 
-        // Bài 0B.2:
+        // Bài 0B.7:
+        const danhSach = document.getElementById("danh-sach");
+        function themMonHoc(tenMon){
+            const monHoc = document.createElement("li");
+            monHoc.textContent = `${tenMon}`;
+            monHoc.classList.add('item');
+            danhSach.appendChild(monHoc);
+        }
+        themMonHoc("Vue.js");
+        themMonHoc("Node.js");
         // Bài 0B.2:
 
         // Bài 0B.2:
