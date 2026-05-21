@@ -67,7 +67,19 @@
         li.forEach((element,index)=>{
             element.classList.toggle("highlight");
         });
-        // Bài 0B.2:
+
+        // Bài 0B.6:
+        li.forEach((element,index) => {
+            if(index % 2 === 0){
+                element.style.backgroundColor = "#dbeafe";
+            }
+            else{
+                element.style.backgroundColor = "#fce7f3";
+            }
+            let fontSize = (index + 1) * 14;
+            element.style.fontSize = `${fontSize}px`
+        });
+
         // Bài 0B.2:
         // Bài 0B.2:
 
