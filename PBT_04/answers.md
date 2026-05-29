@@ -56,7 +56,20 @@ Câu B1 - Positioning Playground (tuan_3_css_advanced/13_creating_responsive_lay
 <img src="/PBT_04/images/B1_hinh2.png" alt="Trạng thái sidebar khi scroll">
 
 - Badge trên card  
-<img src="/PBT_04/images/B1_hinh3.png" alt="Badge trên card">
+<img src="/PBT_04/images/B1_hinh3.png" alt="Badge trên card">  
+
+Phần C:
+Câu C1 - Flexbox vs Grid: Khi nào dùng gì? (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
+1. Navigation bar ngang (logo + menu + buttons)  
+Dùng Flexbox vì Flexbox phù hợp cho layout 1 chiều.  
+2. Lưới ảnh Instagram (3 cột đều nhau, số ảnh không biết trước)
+Dùng Grid vì thao tác lưới chia cột thuận tiện hơn.  
+3. Layout blog: main content + sidebar
+Dùng Grid vì dễ chia độ rộng cột hơn.  
+4. Footer với 4 cột thông tin (Về chúng tôi, Liên kết, Hỗ trợ, Liên hệ)
+Dùng Flexbox cho Footer vì chỉ có 1 hàng nên không cần dùng Grid, dùng Grid cho nội dung trong cột vì Flexbox phù hợp cho layout 1 chiều.  
+5. Card sản phẩm (ảnh trên, text giữa, nút dưới — nút luôn dính đáy)
+Dùng Flex vì Flexbox phù hợp cho layout 1 chiều.  
 
 
 
