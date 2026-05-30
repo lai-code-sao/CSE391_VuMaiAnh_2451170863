@@ -62,15 +62,106 @@ Phần C:
 Câu C1 - Flexbox vs Grid: Khi nào dùng gì? (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
 1. Navigation bar ngang (logo + menu + buttons)  
 Dùng Flexbox vì Flexbox phù hợp cho layout 1 chiều.  
-2. Lưới ảnh Instagram (3 cột đều nhau, số ảnh không biết trước)
+2. Lưới ảnh Instagram (3 cột đều nhau, số ảnh không biết trước)  
 Dùng Grid vì thao tác lưới chia cột thuận tiện hơn.  
-3. Layout blog: main content + sidebar
+3. Layout blog: main content + sidebar  
 Dùng Grid vì dễ chia độ rộng cột hơn.  
-4. Footer với 4 cột thông tin (Về chúng tôi, Liên kết, Hỗ trợ, Liên hệ)
+4. Footer với 4 cột thông tin (Về chúng tôi, Liên kết, Hỗ trợ, Liên hệ)   
 Dùng Flexbox cho Footer vì chỉ có 1 hàng nên không cần dùng Grid, dùng Grid cho nội dung trong cột vì Flexbox phù hợp cho layout 1 chiều.  
-5. Card sản phẩm (ảnh trên, text giữa, nút dưới — nút luôn dính đáy)
+5. Card sản phẩm (ảnh trên, text giữa, nút dưới — nút luôn dính đáy)  
 Dùng Flex vì Flexbox phù hợp cho layout 1 chiều.  
 
+Câu C2 - Debug Flexbox (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
+Lỗi 1:  
+Nguyên nhân: Cards không đều chiều cao do `.card` thiếu thuộc tính height; nút "Mua" bị nhảy lên/xuống do `button` thiếu thuộc tính margin-top.  
 
+```css
+.card-container { display: flex; flex-wrap: wrap; }
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 28%; margin: 1.5%; 
+    border: 1px black solid;
+    border-radius: 10px;
+    height: 30rem;
+    padding: 5px;
+}
+.card img {
+    width: 100%; 
+    height: 300px;
+    object-fit: cover;
+}
+.card h3 { 
+    font-size: 14px; }
+.card btn {
+    padding: 5px; 
+    margin-top: auto;
+    margin-bottom: 10px; 
+}
+```  
+
+Trước khi sửa:  
+
+<img src="/PBT_04/images/C2_L1.jpeg" alt="Ảnh lỗi 1">
+
+Sau khi sửa:  
+
+<img src="/PBT_04/images/C2_Loi1_DaSua.jpeg" alt="Ảnh lỗi 1 sau khi sửa">
+
+Lỗi 2:   
+Nguyên nhân: Muốn items nằm giữa cả ngang lẫn dọc trong container 100vh, nhưng item vẫn dính góc trái trên do `.hero` thiếu thuộc tính `align-items: center;` và `justify-content: center;`.   
+
+```css
+.hero{
+    grid-area: hero-banner;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    border: 1px black solid;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content{
+    border: 1px black solid;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    color: blue;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+```  
+
+Trước khi sửa:  
+
+<img src="/PBT_04/images/C2_L2.jpeg" alt="Ảnh lỗi 1">
+
+Sau khi sửa:  
+
+<img src="/PBT_04/images/C2_L2_DS.jpeg" alt="Ảnh lỗi 1 sau khi sửa">  
+
+Lỗi 3:  
+Nguyên nhân: Sidebar bị co lại khi content quá dài do `.sidebar` thiếu thuộc tính `flex-shrink: 0;` để ngăn sidebar co lại.  
+
+```css
+.layout { display: flex; }
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+.content {
+    flex: 1; 
+}
+```
+
+Trước khi sửa:  
+
+<img src="/PBT_04/images/C2_L3.jpeg" alt="Ảnh lỗi 1">
+
+Sau khi sửa:  
+
+<img src="/PBT_04/images/C2_L3_DS.jpeg" alt="Ảnh lỗi 1 sau khi sửa">  
 
 
