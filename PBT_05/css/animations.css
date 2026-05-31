@@ -31,6 +31,7 @@ main{
 /* Products */
 .content{
     grid-area: content;
+    position: relative;
 }
 .products{
     background-color: rgb(177, 203, 252);
@@ -41,6 +42,7 @@ main{
     gap: 20px;
     padding: 10px;
 }
+
 .products article{
     border: 1px black solid;
     border-radius: 10px;
@@ -52,6 +54,10 @@ main{
     overflow: hidden;
 }
 
+.products article>button{
+    width: 100%;
+    margin-top: auto ;
+}
 
 
 article{
@@ -64,4 +70,15 @@ article:hover{
     box-shadow: 0 5px 10px rgba(0,0,0,0.24),
     0 1px 15px rgba(0,0,0,0.12);
 }
-
+article button{
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+article button:hover{
+    background-color: hotpink;
+    color: white;
+    transform: scale(1.05);
+}
+@keyframes spin{
+    to{ transform: rotate(360deg);}
+}
