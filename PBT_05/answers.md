@@ -32,6 +32,17 @@ VD:
     + Buộc bạn ưu tiên nội dung quan trọng trước (content thinking).  
     + Google và performance tools đánh giá cao hơn.  
 
+Câu A2 — Breakpoints (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
+Breakpoints chuẩn:  
+Breakpoint|	Class infix|	Dimensions| Representative device|Column|
+|---|---|---|---|---|
+Extra small	|None|	<576px| iPhone SE, các điện thoại nhỏ|1 cột|
+Small|	sm	|≥576px|iPhone Plus, điện thoại ngang|2 cột|
+Medium|	md	|≥768px|iPad dọc, tablet|3 cột|
+Large|	lg	|≥992px|Laptop nhỏ|3-4 cột|
+Extra large|	xl	|≥1200px|Desktop, laptop lớn|4 cột|
+Extra extra large|	xxl|	≥1400px|Màn hình 4K, ultrawide|>=4 cột|
+
 Câu A4 - SCSS Basics (tuan_3_css_advanced/16_sass_scss.md + mục 3)  
 1. Variables: Lưu giá trị dùng lại.  
 VD:  
