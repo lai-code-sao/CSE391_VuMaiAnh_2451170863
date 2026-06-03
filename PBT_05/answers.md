@@ -43,6 +43,23 @@ Large|	lg	|≥992px|Laptop nhỏ|3-4 cột|
 Extra large|	xl	|≥1200px|Desktop, laptop lớn|4 cột|
 Extra extra large|	xxl|	≥1400px|Màn hình 4K, ultrawide|>=4 cột|
 
+Câu A3 - Media Queries (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
+```css
+.container { width: 100%; padding: 10px; }
+
+@media (min-width: 576px) { .container { width: 540px; } }
+@media (min-width: 768px) { .container { width: 720px; } }
+@media (min-width: 992px) { .container { width: 960px; } }
+@media (min-width: 1200px) { .container { width: 1140px; } }
+```
+Chiều rộng màn hình	|.container width|
+|---|---|
+375px (iPhone SE)|	100% |
+600px|	540px |
+800px|	720px |
+1000px|	960px |
+8400px|	1140px |  
+
 Câu A4 - SCSS Basics (tuan_3_css_advanced/16_sass_scss.md + mục 3)  
 1. Variables: Lưu giá trị dùng lại.  
 VD:  
