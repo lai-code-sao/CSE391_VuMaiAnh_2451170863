@@ -145,3 +145,69 @@ VD:
 } 
 ```  
 
+Phần C:  
+Câu C1 — Phân tích trang web thực (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
+1. Tiki.com  
+Mobile (375px):  
+<img src="/PBT_05/images/Mobile375.1.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/images/Mobile375.2.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/images/Mobile375.3.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/images/Mobile375.4.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/images/Mobile375.5.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/images/Mobile375.6.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/images/Mobile375.7.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+
+Tablet (768px):  
+<img src="/PBT_05/images/Tablet768.1.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+<img src="/PBT_05/images/Tablet768.2.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+<img src="/PBT_05/images/Tablet768.3.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+<img src="/PBT_05/images/Tablet768.4.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+<img src="/PBT_05/images/Tablet768.5.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+
+
+Desktop (1440px):  
+<img src="/PBT_05/images/Desktop1440.1.1.png" alt="Ảnh trang Tiki trên màn hình 1440px">
+<img src="/PBT_05/images/Desktop1440.2.2.png" alt="Ảnh trang Tiki trên màn hình 1440px">
+<img src="/PBT_05/images/Desktop1440.3.3.png" alt="Ảnh trang Tiki trên màn hình 1440px">
+<img src="/PBT_05/images/Desktop1440.4.4.png" alt="Ảnh trang Tiki trên màn hình 1440px">
+
+2.  
+- Navigation thay đổi    
++ Không chuyển sang hamburger menu.  
++ Không dùng dropdown menu cho điều hướng chính.  
+| Desktop                                  | Tablet giống Mobile                                      |
+| ---------------------------------------- | ------------------------------------------- |
+| Navigation nằm ở header phía trên        | Navigation chuyển xuống thanh dưới màn hình |
+| Có menu và nhiều liên kết trên đầu trang | Chỉ giữ các chức năng chính                 |
+| Có sidebar danh mục                      | Sidebar bị ẩn                               |
+
+- 
+    | Desktop                                  | Tablet | Mobile                                      |
+  | -- | ---------------------------------------- | --------|----------------------------------- |
+   Banner chính |  2 cột     | 1 cột |1 cột|
+   Các icon tính năng nhanh |10 cột  |        5 cột     | 5 cột|
+   Danh sách sản phẩm tiêu chuẩn |      6 cột              |      5 cột                         |2 cột|
+   Khu vực flash sale |   6 cột    | 8 cột |4 cột|
+  Khu vực banner ô vuông danh mục|           6 cột            |        3 cột                       |2 cột|
+
+- Elements bị ẩn trên mobile:  
+    + Toàn bộ cột Sidebar danh mục sản phẩm  
+    + Thanh Topbar thông báo trên cùng  
+    + Các liên kết điều hướng trên Header  
+    + Các từ khóa gợi ý xu hướng  
+    + Nút Trang chủ và nút Tài khoản  
+    + Các nút điều hướng tròn trắng ở hai đầu các khối sản phẩm cuộn ngang  
+    + Dãy cam kết dịch vụ  
+    + Các thông tin phụ trên thẻ sản phẩm  
+- Font size có thay đổi  
+
+3.  @media rules  
+<img src="/PBT_05/images/media.1.png" alt="Ảnh media query tiki.com dùng">
+<img src="/PBT_05/images/media.2.png" alt="Ảnh media query tiki.com dùng">
+
+
+
+
+
+
+
