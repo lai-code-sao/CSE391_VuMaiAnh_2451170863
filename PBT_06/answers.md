@@ -40,4 +40,29 @@ Câu A2 — Utilities & Components (tuan_4_css_frameworks/bootstrap/04_utilities
 | `.container-fluid` | 100%                                    | 100%                       |
 | `.container-md`    | 100%                                    | Có max-width từ md trở lên |
 
+Phần C:  
+Câu C1 (tuan_4_css_frameworks/bootstrap/05_customization/05_customization.md + mục 2 và 3)  
+- Muốn đổi màu `$primary` từ xanh mặc định sang` #E63946`.
+    + Cần công cụ:   
+        + Node.js + npm  
+        + Package bootstrap  
+        + Package sass   
+    + File cần sửa your-custom.scss  
+    + Quy trình:  
+```scss
+// Bước 1: Import functions
+@import "bootstrap/scss/functions";
 
+// Bước 2: Override variable
+$primary: #E63946;
+
+// Bước 3: Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+```
+- KHÔNG nên override trực tiếp .btn-primary `{ background: red; }` mà nên dùng SASS variables vì  
+    + Chỉ sửa được một component  
+    + Phải bảo trì nhiều CSS  
+    + Không tận dụng được hệ thống Bootstrap  
+    + Dễ gặp lỗi specificity  
+
+    
