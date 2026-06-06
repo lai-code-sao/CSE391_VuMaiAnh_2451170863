@@ -16,7 +16,7 @@ Câu A2 - Flexbox vs Grid (tuan_3_css_advanced/13_creating_responsive_layouts.md
 .item { flex: 1; }
 ```  
 4 items → Bố cục = 4 cột chia đều  
-<img src="/PBT_04/images/A2_hinh1.jpg" alt="Sơ đồ bố cục 4 cột chia đều">
+<img src="/PBT_04/screenshots/A2_hinh1.jpg" alt="Sơ đồ bố cục 4 cột chia đều">
 
 - Trường hợp 2:  
 ```css
@@ -24,39 +24,39 @@ Câu A2 - Flexbox vs Grid (tuan_3_css_advanced/13_creating_responsive_layouts.md
 .item { width: 45%; margin: 2.5%; }
 ```  
 6 items → Bố cục = 3 hàng, 2 cột  
-<img src="/PBT_04/images/A2_hinh2.jpg" alt="Sơ đồ bố cục 3 hàng, 2 cột">
+<img src="/PBT_04/screenshots/A2_hinh2.jpg" alt="Sơ đồ bố cục 3 hàng, 2 cột">
 
 - Trường hợp 3:  
 ```css
 .container { display: flex; justify-content: space-between; align-items: center; }
 ```  
 3 items → Bố cục = 3 cột, item 1 gắn sát về bên trái, item 2 nằm giữa trục ngang, item 3 gắn sát về bên phải, cả 3 item nằm giữa container theo trục dọc.  
-<img src="/PBT_04/images/A2_hinh3.jpg" alt="Sơ đồ bố cục 3 cột, item 1 gắn sát về bên trái, item 2 nằm giữa trục ngang, item 3 gắn sát về bên phải, cả 3 item nằm giữa container theo trục dọc">
+<img src="/PBT_04/screenshots/A2_hinh3.jpg" alt="Sơ đồ bố cục 3 cột, item 1 gắn sát về bên trái, item 2 nằm giữa trục ngang, item 3 gắn sát về bên phải, cả 3 item nằm giữa container theo trục dọc">
 
 - Trường hợp 4:  
 ```css
 .container { display: grid; grid-template-columns: 200px 1fr 200px; gap: 20px; }
 ```  
 3 items → Bố cục = 3 cột, item 1 và item 3 có độ rộng cố định và bằng nhau, độ rộng còn lại là của item 2 sau khi đã trừ khoảng cách giữa các item.  
-<img src="/PBT_04/images/A2_hinh4.jpg" alt="Sơ đồ bố cục 3 cột, item 1 và item 3 có độ rộng cố định và bằng nhau, độ rộng còn lại là của item 2 sau khi đã trừ khoảng cách giữa các item">
+<img src="/PBT_04/screenshots/A2_hinh4.jpg" alt="Sơ đồ bố cục 3 cột, item 1 và item 3 có độ rộng cố định và bằng nhau, độ rộng còn lại là của item 2 sau khi đã trừ khoảng cách giữa các item">
 
 - Trường hợp 5:  
 ```css
 .container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 ```  
 7 items → Bố cục = 1 hàng item cuối gắn sát về bên phải container.  
-<img src="/PBT_04/images/A2_hinh5.jpg" alt="Sơ đồ bố cục 1 hàng item cuối gắn sát về bên phải">
+<img src="/PBT_04/screenshots/A2_hinh5.jpg" alt="Sơ đồ bố cục 1 hàng item cuối gắn sát về bên phải">
 
 Phần B:
 Câu B1 - Positioning Playground (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
 - Trạng thái header khi scroll  
-<img src="/PBT_04/images/B1_hinh1.png" alt="Trạng thái header khi scroll">
+<img src="/PBT_04/screenshots/B1_hinh1.png" alt="Trạng thái header khi scroll">
 
 - Trạng thái sidebar khi scroll  
-<img src="/PBT_04/images/B1_hinh2.png" alt="Trạng thái sidebar khi scroll">
+<img src="/PBT_04/screenshots/B1_hinh2.png" alt="Trạng thái sidebar khi scroll">
 
 - Badge trên card  
-<img src="/PBT_04/images/B1_hinh3.png" alt="Badge trên card">  
+<img src="/PBT_04/screenshots/B1_hinh3.png" alt="Badge trên card">  
 
 Phần C:
 Câu C1 - Flexbox vs Grid: Khi nào dùng gì? (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
@@ -102,11 +102,11 @@ Nguyên nhân: Cards không đều chiều cao do `.card` thiếu thuộc tính 
 
 Trước khi sửa:  
 
-<img src="/PBT_04/images/C2_L1.jpeg" alt="Ảnh lỗi 1">
+<img src="/PBT_04/screenshots/C2_L1.jpeg" alt="Ảnh lỗi 1">
 
 Sau khi sửa:  
 
-<img src="/PBT_04/images/C2_Loi1_DaSua.jpeg" alt="Ảnh lỗi 1 sau khi sửa">
+<img src="/PBT_04/screenshots/C2_Loi1_DaSua.jpeg" alt="Ảnh lỗi 1 sau khi sửa">
 
 Lỗi 2:   
 Nguyên nhân: Muốn items nằm giữa cả ngang lẫn dọc trong container 100vh, nhưng item vẫn dính góc trái trên do `.hero` thiếu thuộc tính `align-items: center;` và `justify-content: center;`.   
@@ -136,11 +136,11 @@ Nguyên nhân: Muốn items nằm giữa cả ngang lẫn dọc trong container 
 
 Trước khi sửa:  
 
-<img src="/PBT_04/images/C2_L2.jpeg" alt="Ảnh lỗi 1">
+<img src="/PBT_04/screenshots/C2_L2.jpeg" alt="Ảnh lỗi 1">
 
 Sau khi sửa:  
 
-<img src="/PBT_04/images/C2_L2_DS.jpeg" alt="Ảnh lỗi 1 sau khi sửa">  
+<img src="/PBT_04/screenshots/C2_L2_DS.jpeg" alt="Ảnh lỗi 1 sau khi sửa">  
 
 Lỗi 3:  
 Nguyên nhân: Sidebar bị co lại khi content quá dài do `.sidebar` thiếu thuộc tính `flex-shrink: 0;` để ngăn sidebar co lại.  
@@ -158,10 +158,10 @@ Nguyên nhân: Sidebar bị co lại khi content quá dài do `.sidebar` thiếu
 
 Trước khi sửa:  
 
-<img src="/PBT_04/images/C2_L3.jpeg" alt="Ảnh lỗi 1">
+<img src="/PBT_04/screenshots/C2_L3.jpeg" alt="Ảnh lỗi 1">
 
 Sau khi sửa:  
 
-<img src="/PBT_04/images/C2_L3_DS.jpeg" alt="Ảnh lỗi 1 sau khi sửa">  
+<img src="/PBT_04/screenshots/C2_L3_DS.jpeg" alt="Ảnh lỗi 1 sau khi sửa">  
 
 
