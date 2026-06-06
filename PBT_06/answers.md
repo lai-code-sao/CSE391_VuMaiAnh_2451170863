@@ -42,7 +42,7 @@ Câu A2 — Utilities & Components (tuan_4_css_frameworks/bootstrap/04_utilities
 | `.container-md`    | 100%                                    | Có max-width từ md trở lên |
 
 Phần C:  
-Câu C1 (tuan_4_css_frameworks/bootstrap/05_customization/05_customization.md + mục 2 và 3)  
+Câu C1 — Tùy biến Bootstrap (tuan_4_css_frameworks/bootstrap/05_customization/05_customization.md + mục 2 và 3)  
 - Muốn đổi màu `$primary` từ xanh mặc định sang` #E63946`.
     + Cần công cụ:   
         + Node.js + npm  
