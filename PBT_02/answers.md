@@ -30,19 +30,19 @@ Câu A2 - Validation Attributes (tuan_1_html5/07_forms_interactive.md + mục 3)
 -> Màn hình hiện thông báo nhập giá trị quá ngắn vì minlength="8"
 KẾT QUẢ:
 - TH1:
-<img src="../PBT_02/images/anh_th1.png">
+<img src="../PBT_02/screenshots/anh_th1.png">
 
 - TH2:
-<img src="../PBT_02/images/anh_th2.png">
+<img src="../PBT_02/screenshots/anh_th2.png">
 
 - TH3:
-<img src="../PBT_02/images/anh-th3.png">
+<img src="../PBT_02/screenshots/anh-th3.png">
 
 - TH4:
-<img src="../PBT_02/images/anh_th4.png">
+<img src="../PBT_02/screenshots/anh_th4.png">
 
 - TH5:
-<img src="../PBT_02/images/anh_th5.png">  
+<img src="../PBT_02/screenshots/anh_th5.png">  
 
 Dự đoán vs Thực tế:  
 Trường hợp	        | Thuộc tính gây lỗi    | Validity State (Thực tế)  | Trạng thái :invalid |
@@ -106,13 +106,13 @@ Cách 1:
 VD 1: Logo thương hiệu trên thanh điều hướng  
 ```html
 <a href="index.html">
-  <img src="images/logo-tlu.png" alt="Logo Đại học Thủy Lợi" width="50">
+  <img src="screenshots/logo-tlu.png" alt="Logo Đại học Thủy Lợi" width="50">
 </a>
 ```  
 VD 2: Icon chức năng trong giỏ hàng  
 ```html
 <button>
-  <img src="images/cart-icon.png" alt="" width="20"> 
+  <img src="screenshots/cart-icon.png" alt="" width="20"> 
   Thêm vào giỏ hàng
 </button>
 ```  
@@ -120,14 +120,14 @@ Cách 2:
 VD 1: Chi tiết sản phẩm thời trang  
 ```html
 <figure>
-    <img src="images/ao-somi.jpg" alt="Áo sơ mi nam màu trắng">
+    <img src="screenshots/ao-somi.jpg" alt="Áo sơ mi nam màu trắng">
     <figcaption>Hình 1: Chất liệu vải cotton thoáng mát, phù hợp cho mùa hè.</figcaption>
 </figure> 
 ```   
 VD 2: Biểu đồ trong báo cáo hệ thống  
 ```html
 <figure style="text-align: center;">
-    <img src="images/use-case-diagram.png" alt="Sơ đồ Use Case quản lý thư viện">
+    <img src="screenshots/use-case-diagram.png" alt="Sơ đồ Use Case quản lý thư viện">
     <figcaption>Biểu đồ 2.1: Các tương tác chính của thủ thư và sinh viên với hệ thống.</figcaption>
 </figure> 
 ```    
