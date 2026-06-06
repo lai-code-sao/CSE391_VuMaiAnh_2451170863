@@ -1,3 +1,4 @@
+Track A (Bootstrap):  
 Phần A:
 Câu A1 — Grid System (tuan_4_css_frameworks/bootstrap/02_grid_system/02_grid_system.md + mục 3)  
 Layout cho HTML ở kích thước ≥ 992px:
@@ -64,5 +65,26 @@ $primary: #E63946;
     + Phải bảo trì nhiều CSS  
     + Không tận dụng được hệ thống Bootstrap  
     + Dễ gặp lỗi specificity  
-
-    
+- So sánh CSS thuần với Bootstrap:  
+| Tiêu chí             | CSS Thuần           | Bootstrap                 |
+| -------------------- | ------------------- | ------------------------- |
+| Số dòng CSS          | ~50–60 dòng         | 0–5 dòng                  |
+| Thời gian phát triển | Lâu hơn             | Nhanh hơn                 |
+| Responsive           | Tự viết media query | Có sẵn                    |
+| Components           | Tự xây dựng         | Có sẵn                    |
+| Học tập CSS          | Tốt                 | Ít hiểu sâu CSS hơn       |
+| Tùy biến             | Rất cao             | Có giới hạn bởi framework |
+- Nên dùng Bootstrap khi:  
+    + Prototype nhanh.  
+    + Đồ án môn học.  
+    + Landing page.  
+    + Dashboard admin.  
+    + Website CRUD.  
+    + Dự án cần hoàn thành nhanh.  
+    + Team muốn giao diện nhất quán.  
+- Không nên dùng Bootstrap khi:  
+    + Website có thiết kế độc quyền.  
+    + Design System riêng của công ty.  
+    + UI phức tạp, sáng tạo.  
+    + Cần tối ưu bundle cực mạnh.  
+    + Muốn kiểm soát từng pixel.  
