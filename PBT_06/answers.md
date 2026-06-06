@@ -65,6 +65,8 @@ $primary: #E63946;
     + Phải bảo trì nhiều CSS  
     + Không tận dụng được hệ thống Bootstrap  
     + Dễ gặp lỗi specificity  
+
+Câu C2 — So sánh (tuan_4_css_frameworks/bootstrap/01_getting_started/01_getting_started.md + mục 3)
 - So sánh CSS thuần với Bootstrap:  
 
 | Tiêu chí             | CSS Thuần           | Bootstrap                 |
