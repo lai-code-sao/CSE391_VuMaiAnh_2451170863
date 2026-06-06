@@ -63,7 +63,7 @@ Câu A2 -  CSS Selectors — Dự đoán kết quả (tuan_2_css_core
 6. `article > p`            → Chọn: Thẻ `<p>` là con trực tiếp của thẻ `article`
 7. `a[href="/"]`            → Chọn: Thẻ `<a>` có thuộc tính href="/"
 8. `.top-bar.dark h1`       → Chọn: Thẻ `<h1>` nằm trong thẻ có class="top-bar dark"  
-<img src="/PBT_03/images/selectors_test.png" alt="Ảnh kiểm chứng đáp án">  
+<img src="/PBT_03/screenshots/selectors_test.png" alt="Ảnh kiểm chứng đáp án">  
 
 Câu A3 - Box Model — Tính toán kích thước (tuan_2_css_core
 /11_box_model.md + mục 3)  
@@ -97,10 +97,10 @@ Câu B2 - Box Model Lab (tuan_2_css_core
 Phần 1:  
 
 `Content-box`  
-<img src="/PBT_03/images/demo_content_box.png" alt="Ảnh demo hộp dùng content-box">  
+<img src="/PBT_03/screenshots/demo_content_box.png" alt="Ảnh demo hộp dùng content-box">  
 
 `Border-box`
-<img src="/PBT_03/images/demo_border_box.png" alt="Ảnh demo hộp dùng border-box">  
+<img src="/PBT_03/screenshots/demo_border_box.png" alt="Ảnh demo hộp dùng border-box">  
 
 Hộp 1 (content-box): chiều rộng thực tế = 350px (đo từ DevTools)  
 Hộp 2 (border-box): chiều rộng thực tế = 300px (đo từ DevTools)  
@@ -109,16 +109,16 @@ Giải thích sự khác biệt: Với border-box, padding và border co vào tr
 Phần 2:  
 
 `Content-box`  
-<img src="/PBT_03/images/B2P2_demo_content_box.png" alt="Ảnh demo hộp dùng content-box">  
-<img src="/PBT_03/images/B2P2_demo_content_box1.png" alt="Ảnh demo hộp dùng content-box">  
-<img src="/PBT_03/images/B2P2_demo_content_box2.png" alt="Ảnh demo hộp dùng content-box">  
-<img src="/PBT_03/images/B2P2_demo_content_box3.png" alt="Ảnh demo hộp dùng content-box">  
+<img src="/PBT_03/screenshots/B2P2_demo_content_box.png" alt="Ảnh demo hộp dùng content-box">  
+<img src="/PBT_03/screenshots/B2P2_demo_content_box1.png" alt="Ảnh demo hộp dùng content-box">  
+<img src="/PBT_03/screenshots/B2P2_demo_content_box2.png" alt="Ảnh demo hộp dùng content-box">  
+<img src="/PBT_03/screenshots/B2P2_demo_content_box3.png" alt="Ảnh demo hộp dùng content-box">  
 
 `Border-box`
-<img src="/PBT_03/images/B2P2_demo_border_box.png" alt="Ảnh demo hộp dùng border-box">   
-<img src="/PBT_03/images/B2P2_demo_border_box1.png" alt="Ảnh demo hộp dùng border-box">   
-<img src="/PBT_03/images/B2P2_demo_border_box2.png" alt="Ảnh demo hộp dùng border-box">   
-<img src="/PBT_03/images/B2P2_demo_border_box3.png" alt="Ảnh demo hộp dùng border-box">   
+<img src="/PBT_03/screenshots/B2P2_demo_border_box.png" alt="Ảnh demo hộp dùng border-box">   
+<img src="/PBT_03/screenshots/B2P2_demo_border_box1.png" alt="Ảnh demo hộp dùng border-box">   
+<img src="/PBT_03/screenshots/B2P2_demo_border_box2.png" alt="Ảnh demo hộp dùng border-box">   
+<img src="/PBT_03/screenshots/B2P2_demo_border_box3.png" alt="Ảnh demo hộp dùng border-box">   
 
 Nếu KHÔNG dùng border-box, thì chiều rộng thực tế của container:  250+15x2+500+20x2+250+15x2 = 1100px > 1000px  
 
@@ -198,7 +198,7 @@ h2~p{
 => Element cuối cùng hiển thị màu fuchsia vì specificity của rule là lớn nhất.  
 
 Kết quả:  
-<img src="/PBT_03/images/anh_kq.png" alt="Ảnh kết quả">  
+<img src="/PBT_03/screenshots/anh_kq.png" alt="Ảnh kết quả">  
 
 - Thay đổi thứ tự rule trong CSS file thì kết quả không đổi vì specificity 111 là lớn nhất và không có cái nào cùng mức viết sau nó.  
 
@@ -254,15 +254,15 @@ Cách 2: Không dùng border-box
 ```  
 4.  
 Cách 1: Dùng border-box  
-<img src="/PBT_03/images/debug_layout_c1.1.png" alt="Ảnh minh chứng cách 1">
-<img src="/PBT_03/images/debug_layout_c1.2.png" alt="Ảnh minh chứng cách 1">
-<img src="/PBT_03/images/debug_layout_c1.3.png" alt="Ảnh minh chứng cách 1">
-<img src="/PBT_03/images/debug_layout_c1.4.png" alt="Ảnh minh chứng cách 1">  
+<img src="/PBT_03/screenshots/debug_layout_c1.1.png" alt="Ảnh minh chứng cách 1">
+<img src="/PBT_03/screenshots/debug_layout_c1.2.png" alt="Ảnh minh chứng cách 1">
+<img src="/PBT_03/screenshots/debug_layout_c1.3.png" alt="Ảnh minh chứng cách 1">
+<img src="/PBT_03/screenshots/debug_layout_c1.4.png" alt="Ảnh minh chứng cách 1">  
 
 Cách 2: Không dùng border-box  
-<img src="/PBT_03/images/debug_layout_c2.1.png" alt="Ảnh minh chứng cách 2">
-<img src="/PBT_03/images/debug_layout_c2.2.png" alt="Ảnh minh chứng cách 2">
-<img src="/PBT_03/images/debug_layout_c2.3.png" alt="Ảnh minh chứng cách 2">  
+<img src="/PBT_03/screenshots/debug_layout_c2.1.png" alt="Ảnh minh chứng cách 2">
+<img src="/PBT_03/screenshots/debug_layout_c2.2.png" alt="Ảnh minh chứng cách 2">
+<img src="/PBT_03/screenshots/debug_layout_c2.3.png" alt="Ảnh minh chứng cách 2">  
 
 Câu C2 - Cascade Puzzle (tuan_2_css_core
 /10_inheritance_cascading.md + mục 3)  
@@ -290,4 +290,4 @@ Câu C2 - Cascade Puzzle (tuan_2_css_core
 `.card p { color: inherit; }` -> color = blue  
 `.highlight { color: green !important; }` -> color = green  
 
-<img src="/PBT_03/images/kiem_chung_C2.png" alt="Ảnh kiểm chứng câu C2">
+<img src="/PBT_03/screenshots/kiem_chung_C2.png" alt="Ảnh kiểm chứng câu C2">
