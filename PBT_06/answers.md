@@ -66,6 +66,7 @@ $primary: #E63946;
     + Không tận dụng được hệ thống Bootstrap  
     + Dễ gặp lỗi specificity  
 - So sánh CSS thuần với Bootstrap:  
+
 | Tiêu chí             | CSS Thuần           | Bootstrap                 |
 | -------------------- | ------------------- | ------------------------- |
 | Số dòng CSS          | ~50–60 dòng         | 0–5 dòng                  |
@@ -74,6 +75,7 @@ $primary: #E63946;
 | Components           | Tự xây dựng         | Có sẵn                    |
 | Học tập CSS          | Tốt                 | Ít hiểu sâu CSS hơn       |
 | Tùy biến             | Rất cao             | Có giới hạn bởi framework |
+
 - Nên dùng Bootstrap khi:  
     + Prototype nhanh.  
     + Đồ án môn học.  
