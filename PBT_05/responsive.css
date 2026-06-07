@@ -1,0 +1,102 @@
+/* 1. < 768px */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px; 
+    line-height: 1.5;
+}
+
+/* Header & Mobile Nav (Hamburger) */
+.header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #004494;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.nav-menu a {
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    background-color: #002d62;
+}
+
+/* Kích hoạt Menu thả xuống khi nhấn Hamburger */
+.menu-toggle:checked ~ .nav-menu {
+    display: flex;
+}
+
+/* 2. 768-1023px */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 15px; 
+    }
+
+    /* Ẩn nút Hamburger, Hiện Menu ngang */
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .nav-menu a {
+        padding: 8px 15px;
+        border-radius: 4px;
+    }
+}
+    
+/* 3. ≥ 1024px */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 16px; 
+    }
+
+}
