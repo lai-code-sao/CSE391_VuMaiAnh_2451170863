@@ -35,3 +35,22 @@
     }
 }
 
+// Block Nested 2: Navigation Bar
+.navbar {
+    @include flex-center;
+    background-color: $primary-color;
+    padding: $spacing-md $spacing-lg;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .nav-link {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 $spacing-md;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
