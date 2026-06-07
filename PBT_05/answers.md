@@ -144,8 +144,8 @@ VD:
     background: blue;
 } 
 ```  
-Phần B:
-Câu B1:
+Phần B:  
+Câu B1 — Responsive Product Page  
 - Breakpoints ở 375px:  
 <img src="/PBT_05/screenshots/B1_375.png" alt="Ảnh trang Tiki trên điện thoại 375px">
 
