@@ -149,46 +149,48 @@ Phần C:
 Câu C1 — Phân tích trang web thực (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
 1. Tiki.com  
 Mobile (375px):  
-<img src="/PBT_05/images/Mobile375.1.png" alt="Ảnh trang Tiki trên điện thoại 375px">
-<img src="/PBT_05/images/Mobile375.2.png" alt="Ảnh trang Tiki trên điện thoại 375px">
-<img src="/PBT_05/images/Mobile375.3.png" alt="Ảnh trang Tiki trên điện thoại 375px">
-<img src="/PBT_05/images/Mobile375.4.png" alt="Ảnh trang Tiki trên điện thoại 375px">
-<img src="/PBT_05/images/Mobile375.5.png" alt="Ảnh trang Tiki trên điện thoại 375px">
-<img src="/PBT_05/images/Mobile375.6.png" alt="Ảnh trang Tiki trên điện thoại 375px">
-<img src="/PBT_05/images/Mobile375.7.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/screenshots/Mobile375.1.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/screenshots/Mobile375.2.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/screenshots/Mobile375.3.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/screenshots/Mobile375.4.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/screenshots/Mobile375.5.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/screenshots/Mobile375.6.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+<img src="/PBT_05/screenshots/Mobile375.7.png" alt="Ảnh trang Tiki trên điện thoại 375px">
 
 Tablet (768px):  
-<img src="/PBT_05/images/Tablet768.1.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
-<img src="/PBT_05/images/Tablet768.2.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
-<img src="/PBT_05/images/Tablet768.3.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
-<img src="/PBT_05/images/Tablet768.4.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
-<img src="/PBT_05/images/Tablet768.5.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+<img src="/PBT_05/screenshots/Tablet768.1.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+<img src="/PBT_05/screenshots/Tablet768.2.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+<img src="/PBT_05/screenshots/Tablet768.3.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+<img src="/PBT_05/screenshots/Tablet768.4.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
+<img src="/PBT_05/screenshots/Tablet768.5.png" alt="Ảnh trang Tiki trên máy tính bảng 768px">
 
 
 Desktop (1440px):  
-<img src="/PBT_05/images/Desktop1440.1.1.png" alt="Ảnh trang Tiki trên màn hình 1440px">
-<img src="/PBT_05/images/Desktop1440.2.2.png" alt="Ảnh trang Tiki trên màn hình 1440px">
-<img src="/PBT_05/images/Desktop1440.3.3.png" alt="Ảnh trang Tiki trên màn hình 1440px">
-<img src="/PBT_05/images/Desktop1440.4.4.png" alt="Ảnh trang Tiki trên màn hình 1440px">
+<img src="/PBT_05/screenshots/Desktop1440.1.1.png" alt="Ảnh trang Tiki trên màn hình 1440px">
+<img src="/PBT_05/screenshots/Desktop1440.2.2.png" alt="Ảnh trang Tiki trên màn hình 1440px">
+<img src="/PBT_05/screenshots/Desktop1440.3.3.png" alt="Ảnh trang Tiki trên màn hình 1440px">
+<img src="/PBT_05/screenshots/Desktop1440.4.4.png" alt="Ảnh trang Tiki trên màn hình 1440px">
 
 2.  
 - Navigation thay đổi    
 + Không chuyển sang hamburger menu.  
 + Không dùng dropdown menu cho điều hướng chính.  
-| Desktop                                  | Tablet giống Mobile                                      |
-| ---------------------------------------- | ------------------------------------------- |
-| Navigation nằm ở header phía trên        | Navigation chuyển xuống thanh dưới màn hình |
-| Có menu và nhiều liên kết trên đầu trang | Chỉ giữ các chức năng chính                 |
-| Có sidebar danh mục                      | Sidebar bị ẩn                               |
 
-- 
-    | Desktop                                  | Tablet | Mobile                                      |
-  | -- | ---------------------------------------- | --------|----------------------------------- |
-   Banner chính |  2 cột     | 1 cột |1 cột|
-   Các icon tính năng nhanh |10 cột  |        5 cột     | 5 cột|
-   Danh sách sản phẩm tiêu chuẩn |      6 cột              |      5 cột                         |2 cột|
-   Khu vực flash sale |   6 cột    | 8 cột |4 cột|
-  Khu vực banner ô vuông danh mục|           6 cột            |        3 cột                       |2 cột|
+Desktop                                  | Tablet giống Mobile                         |
+| -------------------------------------- | ------------------------------------------- |
+Navigation nằm ở header phía trên        | Navigation chuyển xuống thanh dưới màn hình |
+Có menu và nhiều liên kết trên đầu trang | Chỉ giữ các chức năng chính                 |
+Có sidebar danh mục                      | Sidebar bị ẩn                               |
+
+- Phân tích 3 screenshots:  
+
+   |Desktop                                  | Tablet | Mobile |  
+|---|---|---|---|
+Banner chính |  2 cột     | 1 cột |1 cột|
+Các icon tính năng nhanh |10 cột  |5 cột| 5 cột|
+Danh sách sản phẩm tiêu chuẩn |6 cột|5 cột|2 cột|
+Khu vực flash sale |6 cột| 8 cột |4 cột|
+Khu vực banner ô vuông danh mục|6 cột|3 cột|2 cột|
 
 - Elements bị ẩn trên mobile:  
     + Toàn bộ cột Sidebar danh mục sản phẩm  
@@ -202,12 +204,109 @@ Desktop (1440px):
 - Font size có thay đổi  
 
 3.  @media rules  
-<img src="/PBT_05/images/media.1.png" alt="Ảnh media query tiki.com dùng">
-<img src="/PBT_05/images/media.2.png" alt="Ảnh media query tiki.com dùng">
+<img src="/PBT_05/screenshots/media.1.png" alt="Ảnh media query tiki.com dùng">
+<img src="/PBT_05/screenshots/media.2.png" alt="Ảnh media query tiki.com dùng">
+
+Câu C2 — Thiết kế Responsive Strategy (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
+
+Desktop:  
+<img src="/PBT_05/screenshots/thietKeDesktop.png" alt="Ảnh thiết kế trang Đặt bàn nhà hàng responsive trên Desktop">
+
+Tablet:  
+<img src="/PBT_05/screenshots/thietKeTablet.png" alt="Ảnh thiết kế trang Đặt bàn nhà hàng responsive trên Tablet">
+
+Mobile:  
+<img src="/PBT_05/screenshots/thietKeMobile.png" alt="Ảnh thiết kế trang Đặt bàn nhà hàng responsive trên Mobile">
+
+- Mobile: Không có thành phần nào bị ẩn đi. Form đặt bàn nằm ở giữa trang, ngay bên dưới phần danh sách ảnh món ăn và ngay phía trên bản đồ (Google Map). Các trường nhập liệu trong form được xếp chồng thành 1 cột dọc.   
+- Tablet: Grid ảnh món ăn được chia làm 2 cột (và 3 hàng). Bản đồ nằm ngay bên dưới Form đặt bàn và phía trên Footer. Bản đồ trải dài toàn bộ chiều rộng của trang.  
+- Desktop:  
+    + Bố cục tổng thể của trang là dạng khối xếp dọc (1 cột chính). Tuy nhiên, các thành phần bên trong được chia cột cụ thể như sau:  
+        + Grid ảnh: Chia 3 cột.  
+        + Form đặt bàn: Chia 2 cột (Cột trái chứa thông tin Ngày/Giờ/Số người; Cột phải chứa Ghi chú và Nút bấm).  
+        + Footer: Chia 3 cột.  
+    + Không có Sidebar.  
+- CSS skeleton dùng Grid + Media Queries Mobile-First:  
+```css
+/* 1. GLOBAL & MOBILE BASE (Dưới 768px) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    min-height: 200px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.map-section iframe {
+    width: 100%;
+    min-height: 250px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
 
 
+/*2. TABLET (Từ 768px trở lên)*/
+@media screen and (min-width: 768px) {
+    body {
+        padding: 24px;
+    }
 
+    .booking-form {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
 
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
+/* 3. DESKTOP (Từ 1024px trở lên) */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 32px 0;
+    }
 
-
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+```
