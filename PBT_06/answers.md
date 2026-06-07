@@ -41,6 +41,20 @@ Câu A2 — Utilities & Components (tuan_4_css_frameworks/bootstrap/04_utilities
 | `.container-fluid` | 100%                                    | 100%                       |
 | `.container-md`    | 100%                                    | Có max-width từ md trở lên |
 
+Phần B:  
+Câu B1 — Landing Page Bootstrap  
+Breakpoint 375px:  
+<img src="/PBT_06/screenshots/B1_375.png" alt="Ảnh layout cho HTML ở mobile">
+<img src="/PBT_06/screenshots/B1_375.2.png" alt="Ảnh layout cho HTML ở mobile">
+
+Breakpoint 768px:  
+<img src="/PBT_06/screenshots/B1_768.png" alt="Ảnh layout cho HTML ở tablet">
+<img src="/PBT_06/screenshots/B1_768.2.png" alt="Ảnh layout cho HTML ở tablet">
+
+Breakpoint 1200px:  
+<img src="/PBT_06/screenshots/B1_1280.png" alt="Ảnh layout cho HTML ở desktop">
+<img src="/PBT_06/screenshots/B1_1280.2.png" alt="Ảnh layout cho HTML ở desktop">
+
 Phần C:  
 Câu C1 — Tùy biến Bootstrap (tuan_4_css_frameworks/bootstrap/05_customization/05_customization.md + mục 2 và 3)  
 - Muốn đổi màu `$primary` từ xanh mặc định sang` #E63946`.
