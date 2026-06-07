@@ -144,6 +144,17 @@ VD:
     background: blue;
 } 
 ```  
+Phần B:
+Câu B1:
+- Breakpoints ở 375px:  
+<img src="/PBT_05/screenshots/B1_375.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+
+- Breakpoints ở 768px:  
+<img src="/PBT_05/screenshots/B1_768.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+
+- Breakpoints ở 1200px:  
+<img src="/PBT_05/screenshots/B1_1200.png" alt="Ảnh trang Tiki trên điện thoại 375px">
+
 
 Phần C:  
 Câu C1 — Phân tích trang web thực (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
