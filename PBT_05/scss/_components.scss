@@ -54,3 +54,22 @@
         }
     }
 }
+
+// Block Nested 3: Buttons
+.btn {
+    padding: $spacing-sm $spacing-md;
+    font-family: $font-primary;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    &.btn-primary {
+        background-color: $primary-color;
+        color: #ffffff;
+
+        &:hover {
+            // Dùng hàm darken có sẵn của SCSS
+            background-color: darken($primary-color, 10%); 
+        }
+    }
+}
