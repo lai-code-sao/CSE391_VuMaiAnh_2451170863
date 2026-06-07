@@ -48,6 +48,144 @@
                     <strong>Thành công!</strong> Đồng bộ dữ liệu hệ thống kho hàng ShopTLU hoàn tất lúc 22:30.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card bg-primary text-white shadow-sm border-0 h-100">
+                            <div class="card-body">
+                                <h6 class="card-title text-white-50 text-uppercase small">Doanh thu ngày</h6>
+                                <h2 class="card-text fw-bold">15.4M</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card bg-success text-white shadow-sm border-0 h-100">
+                            <div class="card-body">
+                                <h6 class="card-title text-white-50 text-uppercase small">Đơn hàng mới</h6>
+                                <h2 class="card-text fw-bold">+142</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card bg-warning text-dark shadow-sm border-0 h-100">
+                            <div class="card-body">
+                                <h6 class="card-title text-black-50 text-uppercase small">Tỷ lệ chuyển đổi</h6>
+                                <h2 class="card-text fw-bold">4.8%</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card bg-danger text-white shadow-sm border-0 h-100">
+                            <div class="card-body">
+                                <h6 class="card-title text-white-50 text-uppercase small">Sản phẩm hết hàng</h6>
+                                <h2 class="card-text fw-bold">8</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-3 rounded shadow-sm mb-4">
+                    <div class="row g-2">
+                        <div class="col-12 col-md-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-light">🔍</span>
+                                <input type="text" class="form-control" placeholder="Tìm theo mã đơn hàng hoặc tên khách...">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="input-group input-group-sm">
+                                <label class="input-group-text bg-light" for="statusFilter">Trạng thái</label>
+                                <select class="form-select" id="statusFilter">
+                                    <option selected>Tất cả trạng thái</option>
+                                    <option>Đã thanh toán</option>
+                                    <option>Chờ xử lý</option>
+                                    <option>Đã hủy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <button class="btn btn-primary btn-sm w-100fw-bold">Lọc kết quả</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-3 rounded shadow-sm mb-4">
+                    <h5 class="fw-bold mb-3 text-secondary">Danh sách đơn hàng gần đây</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover align-middle m-0 small">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Mã ĐH</th>
+                                    <th scope="col">Khách hàng</th>
+                                    <th scope="col">Sản phẩm</th>
+                                    <th scope="col">Tổng tiền</th>
+                                    <th scope="col">Trạng thái</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold">#DH001</td>
+                                    <td>Nguyễn Văn A</td>
+                                    <td>Áo Hoodie TLU (Size M)</td>
+                                    <td>250.000 đ</td>
+                                    <td><span class="badge bg-success">Đã giao</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">#DH002</td>
+                                    <td>Trần Thị B</td>
+                                    <td>Mũ Lưỡi Trai + Bình Nước</td>
+                                    <td>235.000 đ</td>
+                                    <td><span class="badge bg-warning text-dark">Chờ xử lý</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">#DH003</td>
+                                    <td>Phạm Minh C</td>
+                                    <td>Balo Sinh Viên Chống Nước</td>
+                                    <td>320.000 đ</td>
+                                    <td><span class="badge bg-success">Đã giao</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">#DH004</td>
+                                    <td>Lê Hoàng D</td>
+                                    <td>Combo Sticker TLU x2</td>
+                                    <td>40.000 đ</td>
+                                    <td><span class="badge bg-danger">Đã hủy</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-white p-3 rounded shadow-sm">
+                    <h5 class="fw-bold mb-3 text-secondary">Trung tâm hỗ trợ vận hành (FAQ)</h5>
+                    <div class="accordion accordion-flush border rounded" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed fw-bold small" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Làm thế nào để xử lý hoàn tiền cho đơn hàng đã hủy?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Tru cập vào mục "Đơn hàng" -> Chọn đơn hàng bị hủy -> Nhấn nút "Hoàn tiền tài khoản". Hệ thống liên kết ngân hàng sẽ xử lý giao dịch tự động trong từ 1-3 ngày làm việc.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold small" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Quy trình cập nhật số lượng tồn kho định kỳ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Kho hàng được đồng bộ tự động mỗi khi phát sinh giao dịch. Đối với việc kiểm kho thực tế thủ công, admin thực hiện import tệp Excel số lượng mới vào hệ thống vào ngày cuối cùng của tháng.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </main>
         </div>
     </div>
