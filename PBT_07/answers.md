@@ -15,8 +15,7 @@ Câu A1  — var / let / const (tuan_4_javascript_basics/02_getting_started.md +
 Đoạn 2|Báo lỗi vì chưa khai báo|ReferenceError: Cannot access 'y' before initialization|Đúng kết quả nhưng chưa đúng lý do|
 Đoạn 3|15|TypeError: Assignment to constant variable.|Lệch (Do cố tình gán lại giá trị cho const)|
 Đoạn 4|"[1, 2, 3, 4]"|"[1, 2, 3, 4]"|Đúng |
-Đoạn 5|Trong block: 2|Trong block: 2 |Đúng |
- |Ngoài block: 1|Ngoài block: 1|  |
+Đoạn 5|Trong block: 2<br>Ngoài block: 1|Trong block: 2<br>Ngoài block: 1 |Đúng |
 
 - Đoạn 1: JavaScript có một cơ chế tên là Hoisting (kéo ngược lên). Nó tự động lôi phần khai báo var x; lên đỉnh của file trước khi chạy, nhưng để lại phần gán = 5 ở phía dưới. Vì vậy, lúc console.log(x) chạy, biến x đã tồn tại rồi nhưng chưa có giá trị, dẫn đến kết quả là undefined chứ không báo lỗi.  
 - Đoạn 2: Lý do báo lỗi không phải vì y chưa được khai báo (rõ ràng ở dòng dưới bạn có khai báo let y). Lỗi ở đây là do Temporal Dead Zone (Vùng chết tạm thời). let cũng được hoist, nhưng JS nghiêm khắc hơn: bạn hoàn toàn không được đụng vào biến let trước khi code chạy đến dòng khởi tạo nó.  
