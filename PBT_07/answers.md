@@ -95,3 +95,56 @@ const html = `<div class="card">
     <span>Giá: ${price}đ</span>
 </div>`;
 ```
+
+Phần C:  
+Câu C1 — Debug JavaScript (tuan_4_javascript_basics/02_getting_started.md + mục 3)  
+- Lỗi 1: `if (giaSauGiam = 0)`   
+    + Nguyên nhân: Dấu = duy nhất là toán tử gán, biểu thức này gán biến về 0 (Falsy) nên khối code bên dưới không bao giờ chạy.  
+    + Cách sửa: Thay bằng toán tử so sánh nghiêm ngặt `if (giaSauGiam === 0)`.  
+- Lỗi 2: `for (var i = 0; i < 5; i++) { setTimeout(...) }`  
+    + Nguyên nhân: Khai báo bằng var khiến phạm vi của i là Toàn cục (Global scope). Vòng lặp kết thúc trước khi hàm setTimeout đầu tiên kịp thực thi, khi đó i đã tăng lên giá trị 5. Kết quả in ra 5 lần chuỗi "Item 5".  
+    + Cách sửa: Đổi sang khai báo khối bằng từ khóa `let`: `for (let i = 0; i < 5; i++)`. `let` sẽ khởi tạo một phạm vi biến độc lập cho từng chu kỳ lặp.  
+- Lỗi 3: `tinhGiaGiamGia("100000", 20)`  
+    + Nguyên nhân: Chuỗi `"100000"` dù tự động chuyển đổi thành công trong tính toán nhân chia, nhưng dễ gây ra lỗi sai cấu trúc nếu mở rộng phép tính (như toán tử cộng chuỗi).  
+    + Cách sửa: Nên chủ động chuyển đổi sang số thực bằng Number() hoặc parseInt() bên trong hoặc trước khi truyền vào hàm.  
+- Lỗi 4: `return "Phần trăm giảm không hợp lệ"`  
+    + Nguyên nhân: Khi `phanTramGiam` lỗi, hàm trả về String. Đoạn code nhận kết quả lại nối tiếp tính toán hiển thị: `gia2 + "đ"` tạo thành chuỗi `"Phần trăm giảm không hợp lệđ"`.  
+    + Cách sửa: Kiểm tra giá trị hợp lệ của kết quả hoặc quăng ra một Exception lỗi tường minh.  
+- Lỗi 5: Logic điều kiện đầu hàm `if (phanTramGiam < 0 || phanTramGiam > 100)`  
+    + Nguyên nhân: Thiếu trường hợp bảo vệ dữ liệu khi giaBan < 0.  
+    + Cách sửa: Cập nhật thành: `if (giaBan < 0 || phanTramGiam < 0 || phanTramGiam > 100)`.  
+- Lỗi 6: Các dòng gán và trả về dữ liệu thiếu dấu `;`.  
+    + Nguyên nhân: Mặc dù cơ chế Automatic Semicolon Insertion (ASI) của JS giúp chạy được, nhưng thiếu `;` trong một số kịch bản gộp dòng phức tạp sẽ gây lỗi cú pháp nghiêm trọng.  
+    + Cách sửa: Điền dấu `;` ở cuối mỗi câu lệnh độc lập.  
+Code sau khi sửa:  
+```js
+function tinhGiaGiamGia(giaBan, phanTramGiam) {
+    const soGiaBan = Number(giaBan);
+    if (Number.isNaN(soGiaBan) || soGiaBan < 0 || phanTramGiam < 0 || phanTramGiam > 100) {
+        return null; // Trả về null báo hiệu dữ liệu lỗi
+    }
+    
+    let giamGia = (soGiaBan * phanTramGiam) / 100;
+    let giaSauGiam = soGiaBan - giamGia;
+    
+    if (giaSauGiam === 0) {
+        console.log("Sản phẩm miễn phí!");
+    }
+    
+    return giaSauGiam;
+}
+
+// Test sửa đổi
+const gia = tinhGiaGiamGia("100000", 20);
+if (gia !== null) console.log(`Giá sau giảm: ${gia}đ`);
+
+const gia2 = tinhGiaGiamGia(50000, 110);
+if (gia2 === null) console.log("Giá: Dữ liệu không hợp lệ");
+
+// Fix lỗi var đồng bộ bằng cách thay thế thành let
+for (let i = 0; i < 5; i++) {
+    setTimeout(function() {
+        console.log("Item " + i);
+    }, 1000);
+}
+```
