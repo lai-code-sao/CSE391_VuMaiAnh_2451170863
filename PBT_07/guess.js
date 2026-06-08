@@ -9,12 +9,6 @@ function playGame() {
     while (attempts < maxAttempts) {
         let input = prompt(`Lượt đoán thứ ${attempts + 1}/${maxAttempts}. Nhập số của bạn (1-100):`);
 
-        // Xử lý khi bấm nút Huỷ (Cancel)
-        if (input === null) {
-            alert("Bạn đã thoát game.");
-            return;
-        }
-
         let guess = parseInt(input, 10);
 
         // Validate đầu vào
