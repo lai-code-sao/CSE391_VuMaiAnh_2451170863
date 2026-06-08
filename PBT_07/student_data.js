@@ -39,3 +39,11 @@ for (let i = 0; i < students.length; i++) {
 }
 console.log("\nThống kê xếp loại:", counts);
 
+// 5. Tìm SV cao nhất, thấp nhất
+let maxSv = students[0], minSv = students[0];
+for (let i = 1; i < students.length; i++) {
+    if (students[i].avg > maxSv.avg) maxSv = students[i];
+    if (students[i].avg < minSv.avg) minSv = students[i];
+}
+console.log(`Cao nhất: ${maxSv.name} (${maxSv.avg}), Thấp nhất: ${minSv.name} (${minSv.avg})`);
+
