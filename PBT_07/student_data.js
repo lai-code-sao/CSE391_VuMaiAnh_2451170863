@@ -32,3 +32,10 @@ for (let i = 0; i < students.length; i++) {
     console.log(`| ${(i + 1).toString().padEnd(3, ' ')} | ${namePad} | ${avgPad} | ${rankPad} |`);
 }
 
+// 4. Đếm số SV mỗi xếp loại
+let counts = { "Giỏi": 0, "Khá": 0, "Trung bình": 0, "Yếu": 0 };
+for (let i = 0; i < students.length; i++) {
+    counts[students[i].rank]++;
+}
+console.log("\nThống kê xếp loại:", counts);
+
