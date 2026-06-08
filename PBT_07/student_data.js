@@ -21,3 +21,14 @@ for (let i = 0; i < students.length; i++) {
     else sv.rank = "Yếu";
 }
 
+// 3. In bảng kết quả
+console.log("| STT | Tên     | TB   | Xếp loại    |");
+console.log("|-----|---------|------|-------------|");
+for (let i = 0; i < students.length; i++) {
+    let sv = students[i];
+    let namePad = sv.name.padEnd(7, ' ');
+    let avgPad = sv.avg.toFixed(1).padEnd(4, ' ');
+    let rankPad = sv.rank.padEnd(11, ' ');
+    console.log(`| ${(i + 1).toString().padEnd(3, ' ')} | ${namePad} | ${avgPad} | ${rankPad} |`);
+}
+
