@@ -1,4 +1,6 @@
 Phần A: 
+Câu A1  — var / let / const (tuan_4_javascript_basics/02_getting_started.md + mục 3)  
+
 
 Câu A2 — Data Types & Coercion (tuan_4_javascript_basics/03_data_types_variables.md + mục 3)  
 `console.log(typeof null);`       -> "object"  
@@ -29,3 +31,4 @@ console.log("" == false);             // true (cả 2 ép về số 0)
 ```
 - Quy tắc rút ra từ giờ trở đi, nên dùng `===` vì `==` sẽ âm thầm thực hiện ép kiểu (type coercion) trước khi so sánh, dẫn đến những kết quả rất khó đoán (như "" `==` false ra true). Việc dùng `===` buộc JavaScript phải kiểm tra cả Giá trị lẫn Kiểu dữ liệu, giúp code chặt chẽ, an toàn và dễ debug hơn rất nhiều.  
 
+Câu A4 — Truthy & Falsy (tuan_4_javascript_basics/03_data_types_variables.md + mục 3)   
