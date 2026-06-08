@@ -47,3 +47,24 @@ for (let i = 1; i < students.length; i++) {
 }
 console.log(`Cao nhất: ${maxSv.name} (${maxSv.avg}), Thấp nhất: ${minSv.name} (${minSv.avg})`);
 
+// 6. Tính ĐTB toàn lớp theo môn học
+let sumMath = 0, sumPhys = 0, sumCS = 0;
+for (let i = 0; i < students.length; i++) {
+    sumMath += students[i].math;
+    sumPhys += students[i].physics;
+    sumCS += students[i].cs;
+}
+console.log(`ĐTB Môn - Toán: ${(sumMath / students.length).toFixed(2)} | Lý: ${(sumPhys / students.length).toFixed(2)} | CS: ${(sumCS / students.length).toFixed(2)}`);
+
+// 7. Tính ĐTB theo giới tính
+let sumM = 0, countM = 0, sumF = 0, countF = 0;
+for (let i = 0; i < students.length; i++) {
+    if (students[i].gender === "M") {
+        sumM += students[i].avg;
+        countM++;
+    } else {
+        sumF += students[i].avg;
+        countF++;
+    }
+}
+console.log(`ĐTB Nam: ${(sumM / countM).toFixed(2)} | ĐTB Nữ: ${(sumF / countF).toFixed(2)}`);
