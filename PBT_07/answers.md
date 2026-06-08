@@ -1,7 +1,26 @@
 Phần A: 
 Câu A1  — var / let / const (tuan_4_javascript_basics/02_getting_started.md + mục 3)  
+- Dự đoán:  
+Đoạn 1: Báo lỗi vì biến x chưa khai báo  
+Đoạn 2: Báo lỗi vì biến y chưa khai báo  
+Đoạn 3: 15  
+Đoạn 4: [1, 2, 3, 4]  
+Đoạn 5:  
+    Trong block: 2  
+    Ngoài block: 1  
 
+Đoạn code|Dự đoán của bạn|Kết quả thực tế|Đánh giá|
+|---|---|---|---|
+Đoạn 1|Báo lỗi vì chưa khai báo|undefined|Lệch (Do cơ chế Hoisting)|
+Đoạn 2|Báo lỗi vì chưa khai báo|ReferenceError: Cannot access 'y' before initialization|Đúng kết quả nhưng chưa đúng lý do|
+Đoạn 3|15|TypeError: Assignment to constant variable.|Lệch (Do cố tình gán lại giá trị cho const)|
+Đoạn 4|"[1, 2, 3, 4]"|"[1, 2, 3, 4]"|Đúng |
+Đoạn 5|Trong block: 2|Trong block: 2 |Đúng |
+ |Ngoài block: 1|Ngoài block: 1|  |
 
+- Đoạn 1: JavaScript có một cơ chế tên là Hoisting (kéo ngược lên). Nó tự động lôi phần khai báo var x; lên đỉnh của file trước khi chạy, nhưng để lại phần gán = 5 ở phía dưới. Vì vậy, lúc console.log(x) chạy, biến x đã tồn tại rồi nhưng chưa có giá trị, dẫn đến kết quả là undefined chứ không báo lỗi.  
+- Đoạn 2: Lý do báo lỗi không phải vì y chưa được khai báo (rõ ràng ở dòng dưới bạn có khai báo let y). Lỗi ở đây là do Temporal Dead Zone (Vùng chết tạm thời). let cũng được hoist, nhưng JS nghiêm khắc hơn: bạn hoàn toàn không được đụng vào biến let trước khi code chạy đến dòng khởi tạo nó.  
+- Đoạn 3: Ngay khi JS đọc đến dòng z = 20, nó sẽ quăng ra một lỗi nghiêm trọng (TypeError) và dừng toàn bộ chương trình ngay lập tức. Dòng console.log(z) ở phía dưới sẽ không bao giờ được chạy đến. const (constant) là hằng số, một khi đã gán giá trị đầu tiên (15), bạn không được phép dùng dấu = để gán lại giá trị mới cho nó nữa.  
 
 Câu A2 — Data Types & Coercion (tuan_4_javascript_basics/03_data_types_variables.md + mục 3)  
 `console.log(typeof null);`       -> "object"  
