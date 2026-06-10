@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BaiTapThucHanh/session_02_profile23/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/BaiTapThucHanh/session_02_profile23/portfolio_site/css/body.css">
+    <link rel="stylesheet" href="/BaiTapThucHanh/session_02_profile23/portfolio_site/css/header.css">
+    <link rel="stylesheet" href="/BaiTapThucHanh/session_02_profile23/portfolio_site/css/table1.css">
     <title>Vũ Mai Anh Design Portfilo</title>
 </head>
 <body>
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary col-lg-8 offset-lg-2 ">
+        <nav class="navbar border border-dark rounded-pill sticky-top navbar-expand-lg bg-body-tertiary col-lg-8 offset-lg-2 ">
             <div class="container-fluid">
-                <nav class="navbar bg-body-tertiary">
+                <nav class="navbar bg-body-tertiary col-lg-4">
                     <div class="container-fluid">
                         <span class="navbar-brand mb-0">Vũ Mai Anh</span>
                     </div>
@@ -20,23 +22,72 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Work</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
-                    </li>
-                </ul>
-                <form class="container-fluid justify-content-start">
-                    <button class="btn btn-sm btn-outline-secondary me-2" type="button">Contact</button>
-                    <button class="btn btn-sm btn-dark" type="button">Resume</button>
-                </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Experience</a>
+                        </li>
+                    </ul>
+                    <form class="container-fluid justify-content-start">
+                        <button class="btn btn-sm btn-outline-secondary me-2 rounded-pill" type="button">Contact</button>
+                        <button class="btn btn-sm btn-dark rounded-pill" id="btnResume" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                            </svg>
+                            Resume
+                        </button>
+                    </form>
                 </div>
             </div>
         </nav>
         <div class="col-lg-2"></div>
     </header>
+
+    <main>
+        <p class="h1 px-3 px-lg-5">
+            Hello! Wellcome to my corner of the Web. I'm a Sortware Designer who has honned expertise on creating blue 
+            skies from chaos and the belief in the impact of well-crafted experience.
+        </p>
+        <table class="table table-bordered" >
+            <thead>
+                <td>Able Inc.</td>
+                <td>
+                    <p>Senior Product Designer</p>
+                    <p>2024 → 2026</p>
+                </td>
+            </thead>
+            <tbody>
+                <tr class="table-active">
+                    <td colspan="2">
+                        <h2>
+                            Lowering barriers to commercial loan orignation
+                             through workflow automation and AI-powered integrations
+                        </h2>
+                        <span>
+                            Able provides a sophisticated document orchestration platform
+                            for commercial lending and other document-intensive financial use cases, 
+                            integrating with commercial loan origination/management and enterprise content management systems. 
+                            This allows financial institutions to automate and streamline the process of scoping, 
+                            collecting and validating documentation required to complete transactions.
+                        </span>
+
+                    </td>
+                </tr>
+                <tr>
+                ...
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td class="table-active">@social</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
 
     <script src="/BaiTapThucHanh/session_02_profile23/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

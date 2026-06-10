@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "taskName":"Eat",
+        "priority":"High",
+        "completed":"To Do"
+    },
+    {
+        "id": 2,
+        "taskName":"Study",
+        "priority":"High",
+        "completed":"To Do"
+    },
+    {
+        "id": 3,
+        "taskName":"Sleep",
+        "priority":"High",
+        "completed":"Completed"
+    },
+    {
+        "id": 4,
+        "taskName":"Play games",
+        "priority":"Low",
+        "completed":"To Do"
+    },
+    {
+        "id": 5,
+        "taskName":"Reading book",
+        "priority":"Medium",
+        "completed":"In progress"
+    }
+]

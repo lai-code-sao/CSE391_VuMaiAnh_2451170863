@@ -13,39 +13,6 @@
 
 ---
 
-## 📁 Cấu trúc thư mục
-
-```
-session_03_javascript/
-├── README.md              ← File này
-├── exercises/             ← Đề bài
-│   ├── 00_hello_javascript.md     ← Cơ bản: JS cơ bản
-│   ├── 00b_dom_basics.md          ← Cơ bản: DOM cơ bản
-│   ├── 00c_events_basics.md       ← Cơ bản: Events
-│   ├── 00d_dom_mini_projects.md   ← Cơ bản: 5 mini projects
-│   ├── 00e_student_array_app.md   ← Cơ bản: Array & Quản lý SV
-│   ├── 01_skill_filter.md
-│   ├── 02_lightbox.md
-│   ├── 03_form_validation.md
-│   ├── 04_theme_toggle.md
-│   ├── 05_todo_app_crud.md      ← Nâng cao
-│   ├── 06_movie_search_api.md   ← Nâng cao
-│   ├── 07_shopping_cart.md      ← Nâng cao
-│   └── 08_weather_dashboard.md  ← Nâng cao
-├── solutions/            ← Solution
-└── projects/
-    └── portfolio_js/
-        ├── index.html
-        ├── css/
-        │   ├── variables.css
-        │   └── styles.css
-        └── js/
-            ├── main.js
-            ├── portfolio-filter.js
-            ├── lightbox.js
-            ├── form-validation.js
-            └── theme-toggle.js
-```
 
 ---
 

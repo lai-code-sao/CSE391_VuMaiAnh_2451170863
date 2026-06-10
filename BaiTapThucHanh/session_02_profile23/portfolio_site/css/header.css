@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    padding: 30px;
+    top: 0px;
+}
+
